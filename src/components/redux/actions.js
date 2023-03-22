@@ -12,9 +12,16 @@ export const searchFilterTextChange = (text) => {
     };
 };
 
-export const searchFilterStatusChange = (text) => {
+export const searchFilterStatusChange = (status) => {
     return {
         type: "filter/searchStatusChange",
-        payload: text,
+        payload: status,
+    };
+};
+
+export const searchFilterPiorityChange = (piorities) => {
+    return {
+        type: "filter/searchPiorityChange",
+        payload: piorities,
     };
 };
